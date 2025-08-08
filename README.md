@@ -466,7 +466,7 @@ graph LR;
   staged    -- "Изменения"  --> modified;
   staged    -- "git commit" --> tracked;
   tracked   -- "Изменения"  --> modified;
-  modified  -- "git add"    --> "staged + tracked";
+  modified  -- "git add"    --> staged/tracked;
 ```
 
 
